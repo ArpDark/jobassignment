@@ -7,12 +7,17 @@ import { Menu, Transition } from '@headlessui/react';
 
 export default function Navbar(){
     return (
-        <div className="flex  w-full h-16 bg-white drop-shadow-[0_0_12px_rgba(16, 38, 73, 0.06)] items-center md:justify-normal z-10 ">
-        <div className="hidden md:visible md:flex w-1/2 justify-around border-2 border-yellow-300 h-fit ">
-          <a href="#" className=" font-semibold text-base">Crypto Taxes</a>
-          <a href="#" className=" font-semibold text-base">Free Tools</a>
-          <a href="#" className=" font-semibold text-base">Resource Center</a>
-          <button className=" font-semibold text-base">Get Started</button>
+        <div className="flex  w-full h-16 bg-white drop-shadow-[0_0_12px_rgba(16, 38, 73, 0.06)] items-center  z-10 ">
+        <div className="hidden md:visible md:flex w-full border-2 border-yellow-300 h-fit ">
+          <div className="flex items-center ml-[3.75rem] border-2 border-red-400">
+            <img src="./logo.png" className="w-24 h-6 " alt="logo" />
+          </div>
+          <div className="w-full border-2 border-green-500 flex justify-end items-center space-x-8 mr-14">
+            <a href="#" className=" font-semibold text-base">Crypto Taxes</a>
+            <a href="#" className=" font-semibold text-base">Free Tools</a>
+            <a href="#" className=" font-semibold text-base">Resource Center</a>
+            <button className=" font-semibold text-base bg-blue-600 rounded-md p-2 text-white">Get Started</button>
+          </div>
         </div>
 
         <div className="md:hidden w-full flex items-center">
