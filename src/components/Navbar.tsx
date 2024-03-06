@@ -7,22 +7,22 @@ import { Menu, Transition } from '@headlessui/react';
 
 export default function Navbar(){
     return (
-        <div className="flex  w-full h-16 bg-white drop-shadow-[0_0_12px_rgba(16, 38, 73, 0.06)] items-center  z-10 ">
-        <div className="hidden md:visible md:flex w-full  h-fit ">
-          <div className="flex items-center ml-[3.75rem] ">
-            <img src="./logo.png" className="w-24 h-6 " alt="logo" />
+        <div className="flex w-full h-16 bg-white drop-shadow-[0_0_0.75rem_rgba(16, 38, 73, 0.06)] items-center  z-10 ">
+          <div className="hidden md:visible md:flex w-full  h-fit ">
+            <div className="flex items-center ml-[3.75rem] ">
+              <img src="./logo.png" className="w-24 h-6 " alt="logo" />
+            </div>
+            <div className="w-full flex justify-end items-center space-x-8 mr-14 border-2 border-violet-400">
+              <a href="#" className=" font-semibold text-base">Crypto Taxes</a>
+              <a href="#" className=" font-semibold text-base">Free Tools</a>
+              <a href="#" className=" font-semibold text-base">Resource Center</a>
+              <button className=" font-semibold text-base bg-blue-600 rounded-md p-2 text-white">Get Started</button>
+            </div>
           </div>
-          <div className="w-full flex justify-end items-center space-x-8 mr-14">
-            <a href="#" className=" font-semibold text-base">Crypto Taxes</a>
-            <a href="#" className=" font-semibold text-base">Free Tools</a>
-            <a href="#" className=" font-semibold text-base">Resource Center</a>
-            <button className=" font-semibold text-base bg-blue-600 rounded-md p-2 text-white">Get Started</button>
-          </div>
-        </div>
 
-        <div className="md:hidden w-full flex items-center">
-          <img src="./logo.png" className="w-[81px] h-[20px] border-2 border-red-400 ml-[24px]" alt="logo" />
-          <Menu as="div" className="flex text-left justify-end justify-self-end w-full border-2 border-green-400 mr-[24px]">
+          <div className="md:hidden w-full flex items-center">
+          <img src="./logo.png" className="w-20 h-5 border-2 border-red-400 ml-6" alt="logo" />
+          <Menu as="div" className="flex text-left justify-end justify-self-end w-full border-2 border-green-400 mr-6">
             <div >
               <Menu.Button className="inline-flex w-full justify-center bg-transparent ">
                 <MenuIcon sx={{fontSize:27 }}/>

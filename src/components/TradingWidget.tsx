@@ -40,7 +40,7 @@ function TradingViewWidget() {
   );
 
   return (
-    <div className="h-[400px] w-[829px] border-2 border-red-400" ref={container} >
+    <div className=" w-full border-2 border-red-400" ref={container} >
       <div className="" ></div>
     </div>
   );
