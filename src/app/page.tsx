@@ -3,13 +3,18 @@
 import React,{useState,useEffect,Fragment} from "react";
 import Navbar from "@/components/Navbar";
 import TradingWidget from "@/components/TradingWidget";
-
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import GetStartedCard from "@/components/GetStartedCard";
+
 import axios from "axios";
 
 export default function Home() {
   const [bitcoinUsdPrice,setBitcoinUsdPrice]=useState(0);
   const [bitcoinInrPrice,setBitcoinInrPrice]=useState(0);
+  const [usd24hChange,setUsd24hChange] = useState(0);
+  const [usd24hChangePositive, setUsd24hChangePositive] = useState(false);
   useEffect(()=>{
     const fetchBitcoinData=async ()=>{
       const config={
@@ -19,10 +24,16 @@ export default function Home() {
     };
     axios(config)
     .then((result)=>{
-      console.log(result.data.bitcoin);
+      // console.log(result.data.bitcoin);
       setBitcoinUsdPrice(result.data.bitcoin.usd);
       setBitcoinInrPrice(result.data.bitcoin.inr);
-      
+      setUsd24hChange(result.data.bitcoin.usd_24h_change);
+      if(usd24hChange>0){
+        setUsd24hChangePositive(true);
+      }
+      else{
+        setUsd24hChangePositive(false);
+      }
     })
     .catch((error)=>{console.log("Error occurred");});
     }
@@ -39,7 +50,7 @@ export default function Home() {
           <p className="text-[#0f1629] font-medium"> Bitcoin</p>
         </div>
 
-        <div className="flex w-full border-2 border-green-400">
+        <div className="flex md:flex-row flex-col w-full border-2 border-green-400">
           <div className=" flex flex-col border-2 border-yellow-300 w-full">
             <div className=" bg-white md:h-[41rem] rounded-lg pt-6 pl-6 pb-8 border-2 border-blue-500">
               <div className="flex items-center w-full">
@@ -48,17 +59,22 @@ export default function Home() {
                 <p className="text-[#5d667b] font-semibold text-base">BTC</p>
                 <button className=" bg-[#808a9d] text-white rounded-lg ml-10 w-20 h-10 text-base font-medium">Rank #1</button>
               </div>
-              <div className=" flex flex-col">
-                <div className="flex">
+              <div className=" flex flex-col mt-10">
+                <div className="flex items-center">
                   <p className=" font-semibold text-3xl text-[#0b1426]">$ {bitcoinUsdPrice}</p>
-                  <div></div>
-                  <div></div>
+                  <div className={`flex h-fit w-fit rounded font-medium ml-8 p-2 text-base ${usd24hChangePositive?'bg-[#ebf9f4] text-[#14b079]' :'bg-[#EE68551B] text-[#e96975]'}`}>
+
+                    <ArrowDropUpIcon sx={usd24hChangePositive?{display:'block'}:{display:'none'}} />
+                    <ArrowDropDownIcon sx={usd24hChangePositive?{display:'none'}:{display:'block'}}/>
+                    {usd24hChange.toFixed(2)}%
+                  </div>
+                  <div className=" font-medium text-sm ml-3 text-[#768396]">(24H)</div>
                 </div>
-                <p className="text-[#0b1426] text-base font-medium">&#8377; {bitcoinInrPrice}</p>
+                <p className="text-[#0b1426] text-base font-medium leading-7">&#8377; {bitcoinInrPrice}</p>
               </div>
               <div className="flex relative items-center">
                 <div className="flex w-fit">
-                  <p>Bitcoin Price Chart(USD)</p>
+                  <p className=" text-base font-semibold">Bitcoin Price Chart(USD)</p>
                 </div>
                 <div className="flex absolute right-0 border-2 border-gray-400 space-x-5 pr-5 ">
                   <button className=" text-[#5d667b] font-medium text-xs">1H</button>
@@ -89,13 +105,12 @@ export default function Home() {
             <div className="bg-white md:h-[48.5rem] mt-5 rounded-lg">
             </div>
           </div>
-          <div className="flex flex-col ml-5 mr-14">
-            <div className="h-[32.2rem] bg-[#0052fe] rounded-lg px-4 py-8">
-              <p className="text-white text-2xl">Get Started with KoinX </p>
-              <p className="text-white text-2xl">for FREE</p>
-            </div>
-            <div className="h-[14rem] bg-white rounded-lg mt-5">
-            hello world
+          <div className="flex flex-col ml-5 mr-14 w-fit border-2 border-gray-600">
+            <GetStartedCard/>
+            <div className=" flex flex-col h-[14rem] bg-white rounded-lg mt-5 p-5">
+              <p className="text-[#0f1629] font-semibold text-2xl">Trending Coins (24h)</p>
+              <div className="flex flex-col">
+              </div>
             </div>
           </div>
         </div>
