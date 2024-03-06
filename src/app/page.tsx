@@ -7,6 +7,7 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import GetStartedCard from "@/components/GetStartedCard";
+import TrendingCoins from "@/components/TrendingCoins";
 
 import axios from "axios";
 
@@ -38,6 +39,7 @@ export default function Home() {
     .catch((error)=>{console.log("Error occurred");});
     }
     fetchBitcoinData();
+
   },[]);
   return (
     <div className="flex flex-col relative min-h-screen max:w-screen h-fit overflow-y-auto bg-[#eff2f5]">
@@ -62,11 +64,11 @@ export default function Home() {
               <div className=" flex flex-col mt-10">
                 <div className="flex items-center">
                   <p className=" font-semibold text-3xl text-[#0b1426]">$ {bitcoinUsdPrice}</p>
-                  <div className={`flex h-fit w-fit rounded font-medium ml-8 p-2 text-base ${usd24hChangePositive?'bg-[#ebf9f4] text-[#14b079]' :'bg-[#EE68551B] text-[#e96975]'}`}>
+                  <div className={`flex h-7 items-center w-fit rounded font-medium ml-8 p-2 text-base ${usd24hChangePositive?'bg-[#ebf9f4] text-[#14b079]' :'bg-[#EE68551B] text-[#e96975]'}`}>
 
                     <ArrowDropUpIcon sx={usd24hChangePositive?{display:'block'}:{display:'none'}} />
                     <ArrowDropDownIcon sx={usd24hChangePositive?{display:'none'}:{display:'block'}}/>
-                    {usd24hChange.toFixed(2)}%
+                    <p>{usd24hChange.toFixed(2)}%</p>
                   </div>
                   <div className=" font-medium text-sm ml-3 text-[#768396]">(24H)</div>
                 </div>
@@ -107,11 +109,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col ml-5 mr-14 w-fit border-2 border-gray-600">
             <GetStartedCard/>
-            <div className=" flex flex-col h-[14rem] bg-white rounded-lg mt-5 p-5">
-              <p className="text-[#0f1629] font-semibold text-2xl">Trending Coins (24h)</p>
-              <div className="flex flex-col">
-              </div>
-            </div>
+            <TrendingCoins/>
           </div>
         </div>
       </div>
