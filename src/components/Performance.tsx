@@ -37,34 +37,38 @@ export default function Performance(){
                 Fundamentals
                 <img src="./info.png" className=" ml-1 h-5 w-5" alt="" />
             </p>
-            <div className="grid md:grid-cols-2 grid-cols-1 mt-4 gap-x-20">
+            <div className="grid md:grid-rows-5 grid-rows-10 grid-flow-col mt-4 gap-x-20">
                 <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
                     <p className=" text-[#768396] text-sm font-medium ">Bitcoin Price</p>
                     <p className="font-medium text-xs absolute right-0">$16,815.46</p>
-                </div>
-                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
-                    <p className=" text-[#768396] text-sm font-medium ">Market Cap</p>
-                    <p className="font-medium text-xs absolute right-0">$323,507,290,047</p>
                 </div>
                 <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
                     <p className=" text-[#768396] text-sm font-medium ">24h Low / 24h High</p>
                     <p className="font-medium text-xs absolute right-0">$16,382.07 / $16,874.12</p>
                 </div>
                 <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
-                    <p className=" text-[#768396] text-sm font-medium ">Market Cap Dominance</p>
-                    <p className="font-medium text-xs absolute right-0">38.343%</p>
-                </div>
-                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
                     <p className=" text-[#768396] text-sm font-medium ">7d Low / 7d High</p>
                     <p className="font-medium text-xs absolute right-0">$16,382.07 / $16,874.12</p>
                 </div>
                 <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
-                    <p className=" text-[#768396] text-sm font-medium ">Volume / Market Cap</p>
-                    <p className="font-medium text-xs absolute right-0">0.0718</p>
-                </div>
-                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
                     <p className=" text-[#768396] text-sm font-medium ">Trading Volume</p>
                     <p className="font-medium text-xs absolute right-0">$23,249,202,782</p>
+                </div>
+                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
+                    <p className=" text-[#768396] text-sm font-medium ">Market Cap Rank</p>
+                    <p className="font-medium text-xs absolute right-0">#1</p>
+                </div>
+                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
+                    <p className=" text-[#768396] text-sm font-medium ">Market Cap</p>
+                    <p className="font-medium text-xs absolute right-0">$323,507,290,047</p>
+                </div>
+                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
+                    <p className=" text-[#768396] text-sm font-medium ">Market Cap Dominance</p>
+                    <p className="font-medium text-xs absolute right-0">38.343%</p>
+                </div>
+                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
+                    <p className=" text-[#768396] text-sm font-medium ">Volume / Market Cap</p>
+                    <p className="font-medium text-xs absolute right-0">0.0718</p>
                 </div>
                 <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
                     <p className=" text-[#768396] text-sm font-medium ">All-Time High</p>
@@ -76,10 +80,6 @@ export default function Performance(){
                             Nov 10, 2021 (about 1 year)
                         </p>
                     </div>
-                </div>
-                <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
-                    <p className=" text-[#768396] text-sm font-medium ">Market Cap Rank</p>
-                    <p className="font-medium text-xs absolute right-0">#1</p>
                 </div>
                 <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
                     <p className=" text-[#768396] text-sm font-medium ">All-Time Low</p>
