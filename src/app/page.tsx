@@ -9,10 +9,10 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import GetStartedCard from "@/components/GetStartedCard";
 import TrendingCoins from "@/components/TrendingCoins";
 import Performance from "@/components/Performance";
-
-import axios from "axios";
 import Sentiment from "@/components/Sentiment";
 import AboutBitcoin from "@/components/AboutBitcoin";
+import Tokenomics from "@/components/Tokenomics";
+import axios from "axios";
 
 export default function Home() {
   const [bitcoinUsdPrice,setBitcoinUsdPrice]=useState(0);
@@ -107,8 +107,8 @@ export default function Home() {
             <Performance/>
             <Sentiment/>
             <AboutBitcoin/>
-            <div className="bg-white md:h-[48.5rem] mt-5 rounded-lg">
-            </div>
+            <Tokenomics/>
+            
           </div>
           <div className="flex flex-col ml-5 mr-14 w-fit border-2 border-gray-600">
             <GetStartedCard/>
