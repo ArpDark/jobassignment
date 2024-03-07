@@ -41,7 +41,7 @@ function TradingViewWidget() {
 
   return (
 
-    <div className=" md:w-full w-11/12 md:mt-10 mt-4 h-3/5  " ref={container} >
+    <div className="w-full lg:mt-10 mt-4 h-3/5  " ref={container} >
       <div className="" ></div>
     </div>
   );

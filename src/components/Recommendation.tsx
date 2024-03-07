@@ -47,7 +47,7 @@ export default function Recommendation(){
     
 
     return (
-        <div className="flex flex-col bg-white h-fit mt-16 p-6 space-y-6">
+        <div className="flex flex-col bg-white h-fit lg:mt-16 mt-8 lg:rounded-none rounded-lg p-6 space-y-6">
             <p className=" text-[#202020] font-semibold text-2xl">You May Also Like</p>
             <div className=" flex mt-5 pb-7 overflow-x-auto ">
                 {trendingCoins.map((coin)=>(

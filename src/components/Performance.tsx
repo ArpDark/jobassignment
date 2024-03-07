@@ -3,7 +3,7 @@
 export default function Performance(){
 
     return (
-        <div className="bg-white md:h-[34.75rem] mt-5 rounded-lg p-6">
+        <div className="bg-white lg:border-none border-[1px] border-[#DEE1E6] lg:h-[34.75rem] mt-5 rounded-lg p-6">
             <p className=" text-2xl font-semibold">Performance</p>
             <div className="flex mt-6 items-center border-2 border-yellow-300">
                 <div className="flex flex-col">
@@ -35,7 +35,7 @@ export default function Performance(){
                 Fundamentals
                 <img src="./info.png" className=" ml-1 h-5 w-5" alt="" />
             </p>
-            <div className="grid md:grid-rows-5 grid-rows-10 grid-flow-col mt-4 gap-x-20">
+            <div className="grid lg:grid-rows-5 grid-rows-10 grid-flow-col mt-4 gap-x-20">
                 <div className="flex relative items-center border-[#DEE2E6] border-b-[1px] py-3">
                     <p className=" text-[#768396] text-sm font-medium ">Bitcoin Price</p>
                     <p className="font-medium text-xs absolute right-0">$16,815.46</p>

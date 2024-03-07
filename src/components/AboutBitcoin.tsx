@@ -1,6 +1,6 @@
 export default function AboutBitcoin(){
     return (
-        <div className="flex flex-col bg-white md:h-fit mt-5 rounded-lg p-6">
+        <div className="flex flex-col bg-white lg:border-none border-[1px] border-[#DEE1E6] lg:h-fit mt-5 rounded-lg p-6">
             <p className=" text-2xl font-semibold">About Bitcoin</p>
             <p className=" font-bold text-lg mt-6">What is Bitcoin?</p>
             <p className="font-medium text-base text-[#3E424A] mt-2">Bitcoin’s price today is US$16,951.82, with a 24-hour trading volume of $19.14 B. BTC is +0.36% in the last 24 hours. It is currently -7.70% from its 7-day all-time high of $18,366.66, and 3.40% from its 7-day all-time low of $16,394.75. BTC has a circulating supply of 19.24 M BTC and a max supply of 21 M BTC.</p>
@@ -15,7 +15,7 @@ export default function AboutBitcoin(){
             Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing semper scelerisque porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper dui</p>
             <hr className=" my-4" />
             <p className="text-2xl font-semibold flex items-center">Already Holding Bitcoin?</p>
-            <div className="flex md:flex-row flex-col md:space-x-8 space-y-3 mt-2">
+            <div className="flex lg:flex-row flex-col lg:space-x-8 space-y-3 mt-2">
                 <div className="flex p-3 bg-gradient-to-br w-full from-[#79F1A4] to-[#0E5CAD] rounded-md">
                     <img src="./greencard.png"  alt="" />
                     <div className="flex flex-col ml-5 w-1/2">

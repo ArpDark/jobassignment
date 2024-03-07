@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <div className="flex flex-col max:w-screen h-fit overflow-y-auto bg-[#eff2f5]">
       <Navbar/>
-      <div className="flex flex-col md:w-fit w-screen md:ml-14 mx-3">
+      <div className="flex flex-col lg:w-fit w-11/12 lg:ml-14 ml-4">
 
         <div className="flex my-[1.0625rem] ">
           <p className="text-[#3e5765]">Cryptocurrencies </p>
@@ -57,16 +57,16 @@ export default function Home() {
           <p className="text-[#0f1629] font-medium"> Bitcoin</p>
         </div>
 
-        <div className="flex md:flex-row flex-col w-full">
-          <div className=" flex flex-col w-full">
-            <div className=" bg-white h-fit rounded-lg pt-6 md:pl-6 pl-2 pb-8 border-2 border-blue-500">
-              <div className="flex items-center w-full">
-                <img src="./bitcoin.png" className="w-9 h-9 mr-2 border-2 border-orange-400" alt="" />
+        <div className="flex lg:flex-row flex-col w-full ">
+          <div className=" flex flex-col w-full ">
+            <div className=" bg-white lg:border-none  h-fit lg:w-full lg:h-[44rem] rounded-lg pt-6 lg:pl-6 pl-1 pb-8 border-[1px] border-[#DEE1E6]">
+              <div className="flex items-center w-fit">
+                <img src="./bitcoin.png" className="w-9 h-9 mr-2" alt="" />
                 <p className="text-[#0b1426] font-semibold text-2xl mr-2">Bitcoin</p>
                 <p className="text-[#5d667b] font-semibold text-base">BTC</p>
                 <button className=" bg-[#808a9d] text-white rounded-lg ml-10 w-20 h-10 text-base font-medium">Rank #1</button>
               </div>
-              <div className=" flex flex-col mt-10">
+              <div className=" flex flex-col mt-10  w-fit">
                 <div className="flex items-center">
                   <p className=" font-semibold text-3xl text-[#0b1426]">$ {bitcoinUsdPrice}</p>
                   <div className={`flex h-7 items-center w-fit rounded font-medium ml-8 p-2 text-base ${usd24hChangePositive?'bg-[#ebf9f4] text-[#14b079]' :'bg-[#EE68551B] text-[#e96975]'}`}>
@@ -79,12 +79,12 @@ export default function Home() {
                 </div>
                 <p className="text-[#0b1426] text-base font-medium leading-7">&#8377; {bitcoinInrPrice}</p>
               </div>
-              <hr className="bg-[#dee1e6] md:mr-7 my-6"/>
-              <div className="flex md:relative border-2 border-blue-200 flex-col md:flex-row md:items-center md:justify-normal justify-center w-fit md:w-full ">
+              <hr className="bg-[#dee1e6] lg:mr-7 w-full my-6"/>
+              <div className="flex lg:relative flex-col lg:flex-row lg:items-center lg:justify-normal justify-center w-fit lg:w-full ">
                 <div className="flex w-fit">
                   <p className=" text-base font-semibold">Bitcoin Price Chart(USD)</p>
                 </div>
-                <div className="flex border-2 md:absolute md:right-0 border-gray-400 space-x-5 pr-5 ">
+                <div className="flex border-2 lg:absolute lg:right-0 space-x-5 pr-5 ">
                   <button className=" text-[#5d667b] font-medium text-xs">1H</button>
                   <button className=" text-[#5d667b] font-medium text-xs">24H</button>
                   <button className=" text-[#5d667b] font-medium text-xs">7D</button>
@@ -111,14 +111,19 @@ export default function Home() {
             <AboutBitcoin/>
             <Tokenomics/>
             <Team/>
+            <div className="lg:hidden">
+              <Recommendation/>
+            </div>
           </div>
-          <div className="flex flex-col md:ml-5 md:mr-14 md:w-fit w-full border-2 border-gray-600">
+          <div className="flex flex-col lg:ml-5 lg:mr-14 lg:w-fit w-full">
             <GetStartedCard/>
             <TrendingCoins/>
           </div>
         </div>
       </div>
-      <Recommendation/>
+      <div className="hidden lg:block">
+        <Recommendation/>
+      </div>
     </div>
   );
 }

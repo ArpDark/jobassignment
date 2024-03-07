@@ -3,13 +3,13 @@
 export default function Sentiment(){
 
     return(
-        <div className="bg-white h-fit mt-5 rounded-lg p-6">
+        <div className="bg-white h-fit lg:border-none border-[1px] border-[#DEE1E6] mt-5 rounded-lg p-6">
             <p className=" text-2xl font-semibold">Sentiment</p>
             <div className=" flex items-center my-4">
                 <p className=" text-[#44475B] text-lg font-semibold">Key Events</p>
                 <img src="./info.png" alt="" className=" w-5 h-5 ml-1" />
             </div>
-            <div className="flex overflow-x-auto md:w-[43rem] flex-shrink-0 space-x-3">
+            <div className="flex overflow-x-auto lg:w-[43rem] flex-shrink-0 space-x-3">
                 <div className="flex rounded-xl bg-[#E8F4FD] px-4 pt-4 pb-9 h-fit w-fit ">
                     <img src="./fluent_news.png" alt="" className=" w-10 h-10 bg-[#0082FF] p-2  rounded-full" />
                     <div className="flex flex-col ml-2 space-y-2">

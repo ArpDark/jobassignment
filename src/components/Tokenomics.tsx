@@ -1,6 +1,6 @@
  export default function Tokenomics(){
     return (
-        <div className="bg-white md:flex md:flex-col hidden h-fit mt-5 rounded-lg p-6">
+        <div className="bg-white lg:flex lg:flex-col hidden h-fit mt-5 rounded-lg p-6">
             <p className=" text-2xl font-semibold">Tokenomics</p>
             <p className="text-xl font-semibold mt-6 leading-9">Initial Distribution</p>
             <div className="flex items-center space-x-6 mt-4">

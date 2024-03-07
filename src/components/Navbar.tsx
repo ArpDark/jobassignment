@@ -8,7 +8,7 @@ import { Menu, Transition } from '@headlessui/react';
 export default function Navbar(){
     return (
         <div className="flex w-full h-16 bg-white drop-shadow-[0_0_0.75rem_rgba(16, 38, 73, 0.06)] items-center  z-10 ">
-          <div className="hidden md:visible md:flex w-full  h-fit ">
+          <div className="hidden lg:visible lg:flex w-full  h-fit ">
             <div className="flex items-center ml-[3.75rem] ">
               <img src="./logo.png" className="w-24 h-6 " alt="logo" />
             </div>
@@ -20,7 +20,7 @@ export default function Navbar(){
             </div>
           </div>
 
-          <div className="md:hidden w-full flex items-center">
+          <div className="lg:hidden w-full flex items-center">
           <img src="./logo.png" className="w-20 h-5 border-2 border-red-400 ml-6" alt="logo" />
           <Menu as="div" className="flex text-left justify-end justify-self-end w-full border-2 border-green-400 mr-6">
             <div >
