@@ -15,8 +15,8 @@ export default function AboutBitcoin(){
             Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing semper scelerisque porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper dui</p>
             <hr className=" my-4" />
             <p className="text-2xl font-semibold flex items-center">Already Holding Bitcoin?</p>
-            <div className="flex space-x-8 mt-2">
-                <div className="flex p-3 bg-gradient-to-br from-[#79F1A4] to-[#0E5CAD] rounded-md">
+            <div className="flex md:flex-row flex-col md:space-x-8 space-y-3 mt-2">
+                <div className="flex p-3 bg-gradient-to-br w-full from-[#79F1A4] to-[#0E5CAD] rounded-md">
                     <img src="./greencard.png"  alt="" />
                     <div className="flex flex-col ml-5 w-1/2">
                         <p className=" text-xl font-bold text-white">Calculate your Profits</p>
@@ -26,7 +26,7 @@ export default function AboutBitcoin(){
                         </button>
                     </div>
                 </div>
-                <div className="flex p-3 bg-gradient-to-br from-[#FF9865] to-[#EF3031] rounded-md">
+                <div className="flex p-3 bg-gradient-to-br w-full from-[#FF9865] to-[#EF3031] rounded-md">
                     <img src="./orangecard.png"  alt="" />
                     <div className="flex flex-col ml-5 w-1/2">
                         <p className=" text-xl font-bold text-white">Calculate your tax liability</p>

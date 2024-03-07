@@ -1,7 +1,6 @@
 "use client"
 
 import React,{useState,useEffect,useRef} from "react";
-import Carousel from "./Carousel";
 
 const items = [
     { content: <div>Lorem ipsum dolor sit amet consectetur.</div>, color: 'blue' },
@@ -19,7 +18,6 @@ export default function Sentiment(){
                 <p className=" text-[#44475B] text-lg font-semibold">Key Events</p>
                 <img src="./info.png" alt="" className=" w-5 h-5 ml-1" />
             </div>
-            <Carousel items={items}/>
                 {/* <div className="flex flex-col bg-[#E8F4FD] px-4 pt-4 pb-9 w-3/5">
                     <div className="flex">
                         <img src="./fluent_news.png" alt="" className=" w-10 h-10 bg-[#0082FF] p-2  rounded-full" />

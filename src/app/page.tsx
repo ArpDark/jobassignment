@@ -47,9 +47,9 @@ export default function Home() {
 
   },[]);
   return (
-    <div className="flex flex-col relative min-h-screen max:w-screen h-fit overflow-y-auto bg-[#eff2f5]">
+    <div className="flex flex-col border-2 border-black max:w-screen h-fit overflow-y-auto bg-[#eff2f5]">
       <Navbar/>
-      <div className="flex flex-col min:w-fit  border-2 border-pink-400 ml-14 ">
+      <div className="flex flex-col md:w-fit w-screen  border-2 border-pink-400 md:ml-14 mx-3">
 
         <div className="flex my-[1.0625rem] ">
           <p className="text-[#3e5765]">Cryptocurrencies </p>
@@ -80,11 +80,11 @@ export default function Home() {
                 <p className="text-[#0b1426] text-base font-medium leading-7">&#8377; {bitcoinInrPrice}</p>
               </div>
               <hr className="bg-[#dee1e6] mr-7 my-6"/>
-              <div className="flex relative items-center">
+              <div className="flex md:relative border-2 border-blue-200 flex-col md:flex-row md:items-center md:justify-normal justify-center w-fit md:w-full ">
                 <div className="flex w-fit">
                   <p className=" text-base font-semibold">Bitcoin Price Chart(USD)</p>
                 </div>
-                <div className="flex absolute right-0 border-2 border-gray-400 space-x-5 pr-5 ">
+                <div className="flex border-2 md:absolute md:right-0 border-gray-400 space-x-5 pr-5 ">
                   <button className=" text-[#5d667b] font-medium text-xs">1H</button>
                   <button className=" text-[#5d667b] font-medium text-xs">24H</button>
                   <button className=" text-[#5d667b] font-medium text-xs">7D</button>
