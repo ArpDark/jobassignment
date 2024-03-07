@@ -12,6 +12,7 @@ import Performance from "@/components/Performance";
 
 import axios from "axios";
 import Sentiment from "@/components/Sentiment";
+import AboutBitcoin from "@/components/AboutBitcoin";
 
 export default function Home() {
   const [bitcoinUsdPrice,setBitcoinUsdPrice]=useState(0);
@@ -105,8 +106,7 @@ export default function Home() {
             </div>
             <Performance/>
             <Sentiment/>
-            <div className="bg-white md:h-[33.7rem] mt-5 rounded-lg">
-            </div>
+            <AboutBitcoin/>
             <div className="bg-white md:h-[48.5rem] mt-5 rounded-lg">
             </div>
           </div>
