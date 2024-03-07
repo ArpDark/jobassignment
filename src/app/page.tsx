@@ -94,16 +94,15 @@ export default function Home() {
               </div>
               <TradingWidget/>
             </div>
-            <div className="mt-5 space-x-6 ">
-              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.75rem] decoration-2">Overview</button>
-              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.75rem] decoration-2">Fundamentals</button>
-              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.75rem] decoration-2">News Insights</button>
-              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.75rem] decoration-2">Sentiments</button>
-              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.75rem] decoration-2">Team</button>
-              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.75rem] decoration-2">Technicals</button>
-              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.75rem] decoration-2">Tokenomics</button>
+            <div className="flex mt-5 space-x-6 overflow-x-auto border-b-[1px] border-[#d3e0e6] ">
+              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.25rem] decoration-2 flex-shrink-0">Overview</button>
+              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.25rem] decoration-2 flex-shrink-0">Fundamentals</button>
+              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.25rem] decoration-2 flex-shrink-0">News Insights</button>
+              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.25rem] decoration-2 flex-shrink-0">Sentiments</button>
+              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.25rem] decoration-2 flex-shrink-0">Team</button>
+              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.25rem] decoration-2 flex-shrink-0">Technicals</button>
+              <button className=" text-[#3e424a] text-base font-medium hover:text-[#0141cf] hover:underline underline-offset-[0.25rem] decoration-2 flex-shrink-0">Tokenomics</button>
             </div>
-            <div className=" border-[1px] bg-[#d3e0e6] mt-2"></div>
             <Performance/>
             <Sentiment/>
             <div className="bg-white md:h-[33.7rem] mt-5 rounded-lg">

@@ -14,7 +14,7 @@ export default function TrendingCoins(){
         const fetchTrendingCoins=()=>{
             const config={
               method:'get',
-              url:'https://api.coingecko.com/api/v3/search/trending',
+              url:'https://api.coingecko.com/api/v3/search/trending/',
           };
           axios(config)
           .then((result)=>{
@@ -31,12 +31,12 @@ export default function TrendingCoins(){
         fetchTrendingCoins();
     },[]);
 
-    console.log(typeof(trendingCoins[0]));
-    console.log(trendingCoins[0]);
+    // console.log(typeof(trendingCoins[0]));
+    // console.log(trendingCoins[0]);
     return(
         <div className=" flex flex-col h-[14rem] bg-white rounded-lg mt-5 p-5">
             <p className="text-[#0f1629] font-semibold text-2xl">Trending Coins (24h)</p>
-            {loading?  (<p>Loading...</p>):(
+            {trendingCoins.length<=0?  (<p>Loading...</p>):(
                 <div className="flex flex-col mt-6 space-y-5">
                     <div className="flex relative w-full items-center">
                         <img className=" h-6 w-6" src={trendingCoins[0].item.small} alt="" />
