@@ -5,7 +5,7 @@ export default function Performance(){
     return (
         <div className="bg-white lg:border-none border-[1px] border-[#DEE1E6] lg:h-[34.75rem] mt-5 rounded-lg p-6">
             <p className=" text-2xl font-semibold">Performance</p>
-            <div className="flex mt-6 items-center border-2 border-yellow-300">
+            <div className="flex mt-6 items-center">
                 <div className="flex flex-col">
                     <p className=" text-sm font-normal">Today's Low</p>
                     <p className=" text-base font-medium mt-2">46,930.22</p>
@@ -13,7 +13,7 @@ export default function Performance(){
                 <div className="flex flex-col w-8/12 mx-8 items-center justify-center">
                     <div className=" h-1 mt-8 w-full bg-gradient-to-r from-[#FF4949] via-[#FFAF11] to-[#11EB68] rounded-lg"></div>
                     <img src="./uparrow.png" className=" h-2 w-3" alt="" />
-                    <p className=" border-2 border-gray-400 text-xs mt-1">$48,637.83</p>
+                    <p className=" text-xs mt-1">$48,637.83</p>
                 </div>
                 <div className="flex flex-col">
                     <p className=" text-sm font-normal">Today's High</p>

@@ -9,7 +9,7 @@ export default function Sentiment(){
                 <p className=" text-[#44475B] text-lg font-semibold">Key Events</p>
                 <img src="./info.png" alt="" className=" w-5 h-5 ml-1" />
             </div>
-            <div className="flex overflow-x-auto lg:w-[43rem] flex-shrink-0 space-x-3">
+            <div className="flex overflow-x-auto lg:w-[44rem] flex-shrink-0 space-x-3">
                 <div className="flex rounded-xl bg-[#E8F4FD] px-4 pt-4 pb-9 h-fit w-fit ">
                     <img src="./fluent_news.png" alt="" className=" w-10 h-10 bg-[#0082FF] p-2  rounded-full" />
                     <div className="flex flex-col ml-2 space-y-2">

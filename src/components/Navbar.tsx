@@ -12,17 +12,19 @@ export default function Navbar(){
             <div className="flex items-center ml-[3.75rem] ">
               <img src="./logo.png" className="w-24 h-6 " alt="logo" />
             </div>
-            <div className="w-full flex justify-end items-center space-x-8 mr-14 border-2 border-violet-400">
+
+            <div className="w-full flex justify-end items-center space-x-8 mr-14 ">
               <a href="#" className=" font-semibold text-base">Crypto Taxes</a>
               <a href="#" className=" font-semibold text-base">Free Tools</a>
               <a href="#" className=" font-semibold text-base">Resource Center</a>
               <button className=" font-semibold text-base bg-blue-600 rounded-md p-2 text-white">Get Started</button>
             </div>
+            
           </div>
 
           <div className="lg:hidden w-full flex items-center">
-          <img src="./logo.png" className="w-20 h-5 border-2 border-red-400 ml-6" alt="logo" />
-          <Menu as="div" className="flex text-left justify-end justify-self-end w-full border-2 border-green-400 mr-6">
+          <img src="./logo.png" className="w-20 h-5  ml-6" alt="logo" />
+          <Menu as="div" className="flex text-left justify-end justify-self-end w-full mr-6">
             <div >
               <Menu.Button className="inline-flex w-full justify-center bg-transparent ">
                 <MenuIcon sx={{fontSize:27 }}/>
@@ -40,22 +42,24 @@ export default function Navbar(){
               <Menu.Items className="absolute z-10 mt-14 ml-16 w-5/6  origin-top-right bg-white shadow-lg ">
                 <div className="">
                   <Menu.Item>
-                      <a href="#home" className=" text-black block px-4 py-2 text-sm">
+                      <a href="#home" className=" font-semibold text-base block px-4 py-2">
                         Crypto Taxes
                       </a>
                   </Menu.Item>
                   <Menu.Item>
-                      <a href="#about" className=" text-black block px-4 py-2 text-sm">
+                      <a href="#about" className=" font-semibold text-base block px-4 py-2">
                         Free Tools
                       </a>
                   </Menu.Item>
                   <Menu.Item>
-                      <a href="#" className=" text-black block px-4 py-2 text-sm">
+                      <a href="#" className=" font-semibold text-base block px-4 py-2">
                         Resource Center
                       </a>
                   </Menu.Item>
                   <Menu.Item>
-                    <button className="">Get Started</button>
+                    <div className="block px-4 py-2">
+                      <button className=" font-semibold text-base bg-blue-600 rounded-md p-2 text-white">Get Started</button>
+                    </div>
                   </Menu.Item>
                   
                 </div>

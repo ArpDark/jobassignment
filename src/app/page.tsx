@@ -84,7 +84,7 @@ export default function Home() {
                 <div className="flex w-fit">
                   <p className=" text-base font-semibold">Bitcoin Price Chart(USD)</p>
                 </div>
-                <div className="flex border-2 lg:absolute lg:right-0 space-x-5 pr-5 ">
+                <div className="flex lg:absolute lg:right-0 space-x-5 pr-5 ">
                   <button className=" text-[#5d667b] font-medium text-xs">1H</button>
                   <button className=" text-[#5d667b] font-medium text-xs">24H</button>
                   <button className=" text-[#5d667b] font-medium text-xs">7D</button>
