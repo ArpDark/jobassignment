@@ -47,9 +47,9 @@ export default function Home() {
 
   },[]);
   return (
-    <div className="flex flex-col border-2 border-black max:w-screen h-fit overflow-y-auto bg-[#eff2f5]">
+    <div className="flex flex-col max:w-screen h-fit overflow-y-auto bg-[#eff2f5]">
       <Navbar/>
-      <div className="flex flex-col md:w-fit w-screen  border-2 border-pink-400 md:ml-14 mx-3">
+      <div className="flex flex-col md:w-fit w-screen md:ml-14 mx-3">
 
         <div className="flex my-[1.0625rem] ">
           <p className="text-[#3e5765]">Cryptocurrencies </p>
@@ -57,9 +57,9 @@ export default function Home() {
           <p className="text-[#0f1629] font-medium"> Bitcoin</p>
         </div>
 
-        <div className="flex md:flex-row flex-col w-full border-2 border-green-400">
-          <div className=" flex flex-col border-2 border-yellow-300 w-full">
-            <div className=" bg-white md:h-[41rem] rounded-lg pt-6 pl-6 pb-8 border-2 border-blue-500">
+        <div className="flex md:flex-row flex-col w-full">
+          <div className=" flex flex-col w-full">
+            <div className=" bg-white h-fit rounded-lg pt-6 md:pl-6 pl-2 pb-8 border-2 border-blue-500">
               <div className="flex items-center w-full">
                 <img src="./bitcoin.png" className="w-9 h-9 mr-2 border-2 border-orange-400" alt="" />
                 <p className="text-[#0b1426] font-semibold text-2xl mr-2">Bitcoin</p>
@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
                 <p className="text-[#0b1426] text-base font-medium leading-7">&#8377; {bitcoinInrPrice}</p>
               </div>
-              <hr className="bg-[#dee1e6] mr-7 my-6"/>
+              <hr className="bg-[#dee1e6] md:mr-7 my-6"/>
               <div className="flex md:relative border-2 border-blue-200 flex-col md:flex-row md:items-center md:justify-normal justify-center w-fit md:w-full ">
                 <div className="flex w-fit">
                   <p className=" text-base font-semibold">Bitcoin Price Chart(USD)</p>
@@ -112,7 +112,7 @@ export default function Home() {
             <Tokenomics/>
             <Team/>
           </div>
-          <div className="flex flex-col ml-5 mr-14 w-fit border-2 border-gray-600">
+          <div className="flex flex-col md:ml-5 md:mr-14 md:w-fit w-full border-2 border-gray-600">
             <GetStartedCard/>
             <TrendingCoins/>
           </div>
