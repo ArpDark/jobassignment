@@ -14,6 +14,7 @@ import AboutBitcoin from "@/components/AboutBitcoin";
 import Tokenomics from "@/components/Tokenomics";
 import axios from "axios";
 import Team from "@/components/Team";
+import Recommendation from "@/components/Recommendation";
 
 export default function Home() {
   const [bitcoinUsdPrice,setBitcoinUsdPrice]=useState(0);
@@ -116,8 +117,8 @@ export default function Home() {
             <TrendingCoins/>
           </div>
         </div>
-        
       </div>
+      <Recommendation/>
     </div>
   );
 }

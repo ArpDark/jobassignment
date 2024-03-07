@@ -1,7 +1,5 @@
 "use client"
 
-// import ArrowDropUp from "@mui/icons-material/ArrowDropUp";
-
 export default function Performance(){
 
     return (
