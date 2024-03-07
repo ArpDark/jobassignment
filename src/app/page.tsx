@@ -13,6 +13,7 @@ import Sentiment from "@/components/Sentiment";
 import AboutBitcoin from "@/components/AboutBitcoin";
 import Tokenomics from "@/components/Tokenomics";
 import axios from "axios";
+import Team from "@/components/Team";
 
 export default function Home() {
   const [bitcoinUsdPrice,setBitcoinUsdPrice]=useState(0);
@@ -108,13 +109,14 @@ export default function Home() {
             <Sentiment/>
             <AboutBitcoin/>
             <Tokenomics/>
-            
+            <Team/>
           </div>
           <div className="flex flex-col ml-5 mr-14 w-fit border-2 border-gray-600">
             <GetStartedCard/>
             <TrendingCoins/>
           </div>
         </div>
+        
       </div>
     </div>
   );

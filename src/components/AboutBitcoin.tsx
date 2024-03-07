@@ -1,6 +1,6 @@
 export default function AboutBitcoin(){
     return (
-        <div className="bg-white md:h-fit mt-5 rounded-lg p-6">
+        <div className="flex flex-col bg-white md:h-fit mt-5 rounded-lg p-6">
             <p className=" text-2xl font-semibold">About Bitcoin</p>
             <p className=" font-bold text-lg mt-6">What is Bitcoin?</p>
             <p className="font-medium text-base text-[#3E424A] mt-2">Bitcoin’s price today is US$16,951.82, with a 24-hour trading volume of $19.14 B. BTC is +0.36% in the last 24 hours. It is currently -7.70% from its 7-day all-time high of $18,366.66, and 3.40% from its 7-day all-time low of $16,394.75. BTC has a circulating supply of 19.24 M BTC and a max supply of 21 M BTC.</p>
