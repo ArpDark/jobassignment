@@ -3,9 +3,25 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
 
+interface TrendingCoin {
+    item: {
+      small: string;
+      name: string;
+      symbol:string;
+      data: {
+        sparkline:string;
+        price:number;
+        price_change_percentage_24h: {
+          usd: number;
+        };
+      };
+    };
+  }
+
+
 export default function Recommendation(){
 
-    const [trendingCoins,setTrendingCoins]=useState([]);
+    const [trendingCoins,setTrendingCoins]=useState<TrendingCoin[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{

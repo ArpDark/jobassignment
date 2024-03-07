@@ -5,9 +5,21 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import axios from "axios";
 
+interface TrendingCoin {
+    item: {
+      small: string;
+      name: string;
+      data: {
+        price_change_percentage_24h: {
+          usd: number;
+        };
+      };
+    };
+  }
+
 
 export default function TrendingCoins(){
-    const [trendingCoins,setTrendingCoins]=useState([]);
+    const [trendingCoins,setTrendingCoins]=useState<TrendingCoin[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
