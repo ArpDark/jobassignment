@@ -84,15 +84,15 @@ export default function Home() {
                 <div className="flex w-fit">
                   <p className=" text-base font-semibold">Bitcoin Price Chart(USD)</p>
                 </div>
-                <div className="flex lg:absolute lg:right-0 space-x-5 pr-5 ">
-                  <button className=" text-[#5d667b] font-medium text-xs">1H</button>
-                  <button className=" text-[#5d667b] font-medium text-xs">24H</button>
-                  <button className=" text-[#5d667b] font-medium text-xs">7D</button>
-                  <button className=" text-[#5d667b] font-medium text-xs">1M</button>
-                  <button className=" text-[#5d667b] font-medium text-xs">3M</button>
-                  <button className=" text-[#5d667b] font-medium text-xs">6M</button>
-                  <button className=" text-[#5d667b] font-medium text-xs">1Y</button>
-                  <button className=" text-[#5d667b] font-medium text-xs">ALL</button>
+                <div className="flex lg:absolute lg:right-0 pr-5 ">
+                  <button className=" text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">1H</button>
+                  <button className="text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">24H</button>
+                  <button className="text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">7D</button>
+                  <button className="text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">1M</button>
+                  <button className="text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">3M</button>
+                  <button className="text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">6M</button>
+                  <button className="text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">1Y</button>
+                  <button className="text-[#5d667b] py-1 px-2 rounded-xl font-medium text-xs hover:bg-[#E2ECFE] hover:text-[#0141CF]">ALL</button>
                 </div>
               </div>
               <TradingWidget/>
